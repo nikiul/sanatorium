@@ -10,9 +10,7 @@
 </head>
 <body>
     
-    <header class="header">
-
-        
+    <header class="header">  
         <div class="header__top--wrapper">
             <div class="container__header">
                 <div class="header__top">
@@ -46,7 +44,7 @@
                     <div class="header__contacts">
                         <div class="header__adress adress">
                             <img class="adress__icon" src="img/icons/adress.svg" alt="Адрес">
-                            <p class="adress__info"><span>Адрес:</span> <br>г. Кисловодск, проспект <br> Ленина, 30</p>
+                            <p class="adress__info"><span>Адрес:</span> <br>г. Кисловодск, проспект Ленина, 30</p>
                         </div>
                         
                         <div class="header__tel">
@@ -105,9 +103,9 @@
 
                     <div class="header__vertical-line"></div>
 
-                    <a class="header__booking" href="#">Забронировать путёвку</a>
+                    <a  href="#"><button class="header__booking">Забронировать путёвку</button></a>
 
-                    <div class="header__menu">
+                    <div class="header__menu" id="header__menu">
                         <p>Меню</p>
                         <div class="menu-icon" id = "menu-toggle" >
                             <div class="menu-icon-line" id="menu-icon-line"></div>
@@ -118,8 +116,65 @@
                 </div>
             </div>   
         </div>
-    
     </header>
+
+    <main class="main">
+        
+        <section class="section__banner">
+
+            <div class="container">
+
+                <div class="banner__content">
+                    <h3 class="banner__bage">Добро пожаловать в</h3>
+                    <h1 class="banner__titel">Санаторий имени <br> Георгия Димитрова</h1>
+                    <p class="banner__desc">Разнообразный и богатый опыт нашей деятельности позволяет выполнять важные задания <br> по разработке соответствующий условий активизации</p>
+                    <a href="#" > <button class="banner__more-progs">Подробнее о программах</button></a>
+
+                    <div class="banner__row">
+                        <a href="#" class="banner__row--link">
+                            <div class="banner__row--block">
+                                <div class="block__content">
+                                    <h4 class="block__title">Посмотреть <br> номерной фонд</h4>
+                                    <p class="block__par">Вы можете найти у нас широкий выбор номеров, ориентированных под разные программы</p>
+                                </div>    
+                            </div>
+                        </a>           
+                        <a href="#" class="banner__row--link">
+                            <div class="banner__row--block">
+                                <div class="block__content">
+                                    <h4 class="block__title">Оздоровительные программы</h4>
+                                    <p class="block__par">Разнообразные программы, разработанные специалистами направлены на оздоровление…</p>
+                                </div>    
+                            </div>
+                        </a>           
+                        <a href="#" class="banner__row--link">
+                            <div class="banner__row--block">
+                                <div class="block__content">
+                                    <h4 class="block__title">Специальные предложения</h4>
+                                    <p class="block__par">Разнообразный и богатый опыт нашей деятельности позволяет выполнять.</p>
+                                </div>    
+                            </div>
+                        </a>           
+                        <a href="#" class="banner__row--link">
+                            <div class="banner__row--block">
+                                <div class="block__content">
+                                    <h4 class="block__title">Путёвки / <br> Цены</h4>
+                                    <p class="block__par">Разнообразный и богатый опыт нашей деятельности позволяет выполнять.</p>
+                                </div>    
+                            </div>
+                        </a>           
+                        
+                    </div>
+
+                    <img class="banner__img--down" src="img/icons/down.svg" alt="Вниз">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <!-- Собственные скрипты и вызовы библиотек -->
     <script src="js/main.js"></script>

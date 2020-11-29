@@ -56,7 +56,10 @@
     background-color: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 61, 102, 0.15);
     border-radius: 5px;
+    border: none;
+    outline: none;
     transition: all 0.2s ease-in;
+    cursor: pointer;
 
     &:hover {
         background-color: #006CB5;
@@ -72,6 +75,18 @@
 .header__menu {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 62px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fff;
+        border-radius: 5px;
+        width: 180px;
+        height: 62px;
+    }
 
     p {
         margin: 0;
@@ -83,7 +98,11 @@
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-    }
+        transition: color 0.2s ease-in;    }
+}
+
+.header__menu:hover p {
+    color: #006CB5;
 }
 
 .menu-icon {
@@ -95,23 +114,6 @@
     border-radius: 8px;
     width: 61px;
     height: 61px;
-    transition: background-color 0.2s ease-in;
-    cursor: pointer;
-
-    &:hover {
-        width: 61px;
-        height: 61px;
-        background-color: #fff;
-        border-radius: 8px;
-    }
-}
-
-.menu-icon:hover .menu-icon-line::before {
-    background-color: #006CB5;
-}
-
-.menu-icon:hover .menu-icon-line::after {
-    background-color: #006CB5;
 }
 
 .menu-icon-line {
@@ -136,7 +138,10 @@
     transition: all 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-  
+.header__menu:hover .menu-icon-line::before { // перекраживаем первую полоску при наведении на header__menu
+    background-color: #006CB5;
+}
+
 .menu-icon-line::after{
     position: absolute;
     left: 0px;
@@ -150,22 +155,6 @@
     transition:  all 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-// .menu-icon-line:hover::after {
-//     background-color: #006CB5;
-// }
-  
-// .menu-icon.menu-icon-active .menu-icon-line {
-//     background-color: transparent;
-// }
-  
-// .menu-icon.menu-icon-active .menu-icon-line::before {
-//     transform: rotate(45deg);
-//     top: 0;
-//     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-// }
-  
-// .menu-icon.menu-icon-active .menu-icon-line::after {
-//     transform: rotate(-45deg);
-//     top: 0;
-//     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-// }
+.header__menu:hover .menu-icon-line::after { // перекраживаем третью полоску при наведении на header__menu
+    background-color: #006CB5;
+}
