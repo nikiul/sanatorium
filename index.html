@@ -12,54 +12,116 @@
     
     <header class="header">
 
-        <div class="container__header">
-            <div class="header__content">
-                <div class="header__logo">
-                    <a href="index.html">
-                        <img src="img/icons/header-logo.svg" alt="СКУ «Санаторий им. Георгия Димитрова»">
-                    </a>
-                    <h3 class="header__title">Официальный сайт <br> <span>СКУ «Санаторий им. Георгия Димитрова»</span></h3>
-                </div>
-                
-                <div class="header__programm">Программа ростуризма - <span>20%</span></div>
-
-                <ul class="header__socials socials">
-                    <li class="header__socials--item">
-                        <a href="#">
-                            <img src="img/icons/inst.svg" alt="Инстаграм">
+        
+        <div class="header__top--wrapper">
+            <div class="container__header">
+                <div class="header__top">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="img/icons/header-logo.svg" alt="СКУ «Санаторий им. Георгия Димитрова»">
                         </a>
-                    </li>
-                    <li class="header__socials--item">
-                        <a href="#">
-                            <img src="img/icons/vk.svg" alt="ВКонтакте">
-                        </a>
-                    </li>
-                    <li class="header__socials--item">
-                        <a href="#">
-                            <img src="img/icons/fb.svg" alt="Фейсбук">
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="header__contacts">
-                    <div class="header__adress adress">
-                        <img class="adress__icon" src="img/icons/adress.svg" alt="Адрес">
-                        <p class="adress__info"><span>Адрес:</span> <br>г. Кисловодск, проспект <br> Ленина, 30</p>
+                        <h3 class="header__title">Официальный сайт <br> <span>СКУ «Санаторий им. Георгия Димитрова»</span></h3>
                     </div>
                     
-                    <div class="header__tel">
-                        <img class="tel__icon" src="img/icons/tel.svg" alt="Телефон">
-                        <div class="header__tel--info">
-                            <p>8 (87937) 6-72-20 <img class="header__tel--trigon" src="img/icons/trigon.svg" alt=""></p>
-                            <a href="tel:8 (87937) 6-72-20">заказать звонок</a>
+                    <div class="header__programm">Программа ростуризма - <span>20%</span></div>
+
+                    <ul class="header__socials socials">
+                        <li class="header__socials--item">
+                            <a href="#">
+                                <img src="img/icons/inst.svg" alt="Инстаграм">
+                            </a>
+                        </li>
+                        <li class="header__socials--item">
+                            <a href="#">
+                                <img src="img/icons/vk.svg" alt="ВКонтакте">
+                            </a>
+                        </li>
+                        <li class="header__socials--item">
+                            <a href="#">
+                                <img src="img/icons/fb.svg" alt="Фейсбук">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="header__contacts">
+                        <div class="header__adress adress">
+                            <img class="adress__icon" src="img/icons/adress.svg" alt="Адрес">
+                            <p class="adress__info"><span>Адрес:</span> <br>г. Кисловодск, проспект <br> Ленина, 30</p>
                         </div>
                         
+                        <div class="header__tel">
+                            <img class="tel__icon" src="img/icons/tel.svg" alt="Телефон">
+                            <div class="header__tel--info">
+                                <p>8 (87937) 6-72-20 <img src="img/icons/trigon.svg" alt=""></p>
+                                <a href="tel:8 (87937) 6-72-20">заказать звонок</a>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
+                </div>    
             </div>
         </div>
 
+        <div class="header__sub--wrapper">
+            <div class="container__header">
+                <div class="header__sub">
+                    <ul class="header__nav">
+                        <li class="header__nav--item header__nav--item-active">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#">Санаторий</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#">Лечение</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#">Проживание</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#">Путевки</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#">Инфо</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__vertical-line"></div>
+
+                    <ul class="header__nav">
+                        <li class="header__nav--item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#">Вопрос-ответ</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__vertical-line"></div>
+
+                    <a class="header__booking" href="#">Забронировать путёвку</a>
+
+                    <div class="header__menu">
+                        <p>Меню</p>
+                        <div class="menu-icon" id = "menu-toggle" >
+                            <div class="menu-icon-line" id="menu-icon-line"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>   
+        </div>
+    
     </header>
 
+    <!-- Собственные скрипты и вызовы библиотек -->
+    <script src="js/main.js"></script>
 </body>
 </html>

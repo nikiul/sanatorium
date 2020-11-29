@@ -1,0 +1,176 @@
+.header__sub--wrapper {
+    background: linear-gradient(90.09deg, #006CB5 0.55%, #0081D8 100%);
+}
+
+.header__sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    max-width: 768px;
+
+    a {
+        color: #FFFFFF;
+    }
+}
+
+.header__nav-vertical-line {
+
+}
+
+.header__nav--item {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 60px;
+    color: #FFFFFF;
+    list-style-type: none;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__nav--item-active {
+    border-bottom: 8px solid #fff;
+}
+
+.header__vertical-line {
+    height: 39px;
+    width: 1px;
+    background-color: #fff;
+}
+
+.header__booking {
+    padding: 12px 25px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2E95DB;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 61, 102, 0.15);
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: #006CB5;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: #003A62;
+    }
+}
+
+// -------------- Меню бургер --------------
+.header__menu {
+    display: flex;
+    align-items: center;
+
+    p {
+        margin: 0;
+        margin-right: 18px;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    border-radius: 8px;
+    width: 61px;
+    height: 61px;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        width: 61px;
+        height: 61px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+}
+
+.menu-icon:hover .menu-icon-line::before {
+    background-color: #006CB5;
+}
+
+.menu-icon:hover .menu-icon-line::after {
+    background-color: #006CB5;
+}
+
+.menu-icon-line {
+    position: relative;
+    width: 33px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: background-color 0.2s ease-in;
+
+}
+  
+.menu-icon-line::before {
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: all 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+  
+.menu-icon-line::after{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    content: '';
+    display: block;
+    width: 21px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition:  all 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+// .menu-icon-line:hover::after {
+//     background-color: #006CB5;
+// }
+  
+// .menu-icon.menu-icon-active .menu-icon-line {
+//     background-color: transparent;
+// }
+  
+// .menu-icon.menu-icon-active .menu-icon-line::before {
+//     transform: rotate(45deg);
+//     top: 0;
+//     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+// }
+  
+// .menu-icon.menu-icon-active .menu-icon-line::after {
+//     transform: rotate(-45deg);
+//     top: 0;
+//     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+// }
