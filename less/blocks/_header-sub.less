@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .header__nav {
@@ -21,22 +22,23 @@
 }
 
 .header__nav--item {
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
     line-height: 60px;
     color: #FFFFFF;
     list-style-type: none;
     margin-right: 30px;
+    border-bottom: 8px solid transparent;
+    transition: border-bottom 0.2s ease-in;
+
+    &:hover {
+        border-bottom: 8px solid #fff;
+    }
 
     &:last-child {
         margin-right: 0;
     }
-}
-
-.header__nav--item-active {
-    border-bottom: 8px solid #fff;
 }
 
 .header__vertical-line {
