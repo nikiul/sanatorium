@@ -1,6 +1,5 @@
 .header {
     background-color: #fff;
-    
 }
 
 .header__top {
@@ -14,18 +13,27 @@
 .header__logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     a {
         width: 98px;
         height: 81px;
         margin-right: 20px;
+
+        // Медиа-запрос для экранов с шириной до 1580px
+        @media (max-width: 1580px) {
+            width: 64px;
+            height: 53px;
+            margin-right: 10px;
+         }
     }
 
-    img {
-        // width: 98px;
-        // height: 81px;
-        // margin-right: 20px;
+    img {  
+        // Медиа-запрос для экранов с шириной до 1580px
+        @media (max-width: 1580px) {
+           width: 64px;
+           height: 53px;
+           margin-right: 10px;
+        }
     }
 }
 
@@ -53,13 +61,15 @@
     background-color: #FF3333;
     border-radius: 5px;
 
+    // Медиа-запрос для экранов с шириной до 1580px
+    @media (max-width: 1580px) {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
     span {
         font-weight: 800;
     }
-}
-
-.header__socials {
-    
 }
 
 .socials {
@@ -79,7 +89,7 @@
 }
 
 .header__adress {
-    margin-right: 44px;
+    margin-right: 53px;
 }
 
 .adress {
@@ -98,6 +108,11 @@
     font-size: 14px;
     line-height: 22px;
     color: #303030;
+
+    // Медиа-запрос для экранов с шириной до 1580px
+    @media (max-width: 1580px) {
+        font-size: 12px;
+    }
 
     span {
         font-weight: 800;
@@ -119,7 +134,8 @@
     a {
         font-family: 'Open Sans';
         font-size: 12px;
-        font-weight: 700;
+        font-weight: normal;
+        line-height: 16px;
         text-decoration-line: underline;
         text-transform: uppercase;
         color: #006CB5;
@@ -135,6 +151,11 @@
     color: #232A34;
     outline: none;
     cursor: pointer;
+
+    // Медиа-запрос для экранов с шириной до 1580px
+    @media (max-width: 1580px) {
+        font-size: 12px;
+     }
 }
 
 .drop-down-hide {
@@ -170,9 +191,9 @@
     }
 }
 
-.drop-down-click:focus ~ .drop-down-hide, 
-.drop-down-click:active ~ .drop-down-hide, 
-.drop-down-hide:hover 
-{ 
-    display: block; 
-} 
+// .drop-down-click:focus ~ .drop-down-hide, 
+// .drop-down-click:active ~ .drop-down-hide, 
+// .drop-down-hide:hover 
+// { 
+//     display: block; 
+// } 

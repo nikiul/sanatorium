@@ -12,9 +12,9 @@
 .header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0;
-    max-width: 768px;
 
     a {
         color: #FFFFFF;
@@ -22,15 +22,21 @@
 }
 
 .header__nav--item {
+    margin-right: 30px;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
     line-height: 60px;
     color: #FFFFFF;
     list-style-type: none;
-    margin-right: 30px;
     border-bottom: 8px solid transparent;
     transition: border-bottom 0.2s ease-in;
+
+    // Медиа-запрос для экранов с шириной до 1580px
+    @media (max-width: 1580px) {
+        font-size: 16px;
+        margin-right: 25px;
+    }
 
     &:hover {
         border-bottom: 8px solid #fff;
@@ -49,8 +55,7 @@
 
 .header__booking {
     padding: 12px 25px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: 'Open Sans';
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
@@ -100,7 +105,13 @@
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-        transition: color 0.2s ease-in;    }
+        transition: color 0.2s ease-in;
+        
+        // Медиа-запрос для экранов с шириной до 1580px
+        @media (max-width: 1580px) {
+            margin-right: 10px;
+         }
+    }
 }
 
 .header__menu:hover p {
