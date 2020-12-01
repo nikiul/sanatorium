@@ -1,5 +1,8 @@
+// --- стили для блока и текста перед картой ---
 .section__infra {
     padding: 80px 0;
+    margin-bottom: 113px;
+    background-color: #FAFAFA;
 }
 
 .section__infra-title {
@@ -9,10 +12,10 @@
     font-weight: bold;
     font-size: 48px;
     line-height: 65px;
-    color: #006CB5;
+    color: #303030;
 
     span {
-        color: #303030;
+        color :#006CB5 ;
     }
 }
 
@@ -25,9 +28,151 @@
     color: #303030;
 }
 
-.section__infra-map {
-    text-align: center;
+// --- стили для карты и бейджиков ---
+.section__infra-map--wrapper {
+    width: 100%;
+    height: 850px;
+    background-image: url('../img/infra-map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
-    max-width: 1271px;
-    height: auto;
+}
+
+// --- стили для всех закрытых беджиков ---
+.map__badge-closed {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#map__badge-closed1 {
+    padding-top: 169px;
+    padding-right: 30px;
+}
+
+#map__badge-closed2 {
+    margin-top: -101px;
+    margin-right: 160px;
+    flex-direction: row-reverse;
+}
+
+#map__badge-closed3 {
+    margin-top: 47px;
+    margin-left: 105px;
+    margin-right: 0;
+    justify-content: flex-start;
+}
+
+.map__badge-img {
+    margin-right: 25px;
+}
+
+#map__badge-img {
+    margin-right: 0;
+}
+
+.map__badge-closed--title {
+    width: 220px;;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        margin: 0;
+        padding-left: 20px;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #303030;
+    }
+}
+
+#map__badge-closed--title {
+    margin-right: 25px;
+}
+
+.map__badge-trigon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #2E95DB;
+}
+
+// -- div для открытого бейджа и для корпуса №3 ---
+.map__badge-middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+// --- стили для одного открытого беджика ---
+.map__badge-opened {
+    display: inline-block;
+    width: 327px;
+    height: 220px;
+    margin-left: 239px;
+    margin-top: 33px;
+    background-color: #fff;
+}
+
+.map__badge-opened--title {
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EAEAEA;
+    
+    p {
+        margin: 0;
+        padding-left: 20px;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #303030;
+    }
+}
+
+.map__badge-opened--menu {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: #303030;
+    }
+}
+
+.map__badge-opened--desc {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 0;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        line-height: 16px;
+        color: #303030;
+    }
+
+    img {
+        margin-right: 10px;
+    }
 }

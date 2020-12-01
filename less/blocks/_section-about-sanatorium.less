@@ -40,11 +40,12 @@
 }
 
 .about-sanatorium__btn {
+    width: 235px;
+    padding: 19px 0;
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 18px;
     line-height: 24px; 
-    padding: 19px 65px;
     color: #FFFFFF;
     background: #2E95DB;
     box-shadow: 0px 4px 20px rgba(0, 61, 102, 0.15);
@@ -52,6 +53,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all 0.2s ease-in;
 
     &:hover {
         background: #006CB5;
@@ -70,21 +72,21 @@
 
 }
 
-// .about-sanatorium__bg-square {
-//     position: absolute;
-//     z-index: 1;
-//     margin-right: 0;
-//     width: 768px;
-//     height: 499px;
-//     background: linear-gradient(0deg, #006CB5, #006CB5), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
-//     border-radius: 10px;
-// }
+.about-sanatorium__video--wrapper {
+
+}
 
 .about-sanatorium__video {
+    border-radius: 10px;
+   
+}
+
+.about-sanatorium__video {
+    max-width: 877px;  
 
 
     img {
-        max-width: 877px;  
+        max-width: 100%;  
         height: auto;  
         display: block;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(image.png);
@@ -163,6 +165,7 @@
 }
 
 .block__btn { 
+    display: block;
     padding: 19px 66px;
     margin-left: 20px;
     margin-right: 20px;
