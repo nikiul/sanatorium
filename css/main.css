@@ -1431,7 +1431,7 @@ a {
   margin: 0;
 }
 .sanatorium-progs__bottom-form button {
-  padding: 18px 40px;
+  padding: 17px 40px;
   font-family: 'Open Sans';
   font-weight: bold;
   font-size: 16px;
@@ -1442,5 +1442,11 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
+}
+.sanatorium-progs__bottom-form button:hover {
+  background-color: #006CB5;
+}
+.sanatorium-progs__bottom-form button:active {
+  background-color: #003a62;
 }
 /*# sourceMappingURL=main.css.map */
