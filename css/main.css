@@ -770,7 +770,7 @@ a {
   outline: none;
   cursor: pointer;
 }
-.about__block:hover .block__btn {
+.about__block:hover .about__block-btn {
   background-color: #fff;
   color: #2E95DB;
 }
