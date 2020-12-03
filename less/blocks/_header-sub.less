@@ -1,5 +1,10 @@
 .header__sub--wrapper {
     background: linear-gradient(90.09deg, #006CB5 0.55%, #0081D8 100%);
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        display: none;
+    }
 }
 
 .header__sub {
@@ -9,20 +14,37 @@
 
 }
 
+.header__nav-wrapper1 {
+    width: 743px;
+
+    // Медиа-запрос для экранов с шириной до 1200px
+    @media (max-width: 1200px) {
+        width: 580px;
+    }
+}
+
+.header__nav-wrapper2 {
+    width: 332px;
+
+    // Медиа-запрос для экранов с шириной до 1200px
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
-
+    width: 100%;
     a {
         color: #FFFFFF;
     }
 }
 
 .header__nav--item {
-    margin-right: 30px;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
@@ -35,7 +57,11 @@
     // Медиа-запрос для экранов с шириной до 1580px
     @media (max-width: 1580px) {
         font-size: 16px;
-        margin-right: 25px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        font-size: 14px;
     }
 
     &:hover {
@@ -47,15 +73,99 @@
     }
 }
 
+/* Dropdown Button */
+.dropbtn {
+    display: none;
+    color: white;
+    width: 27px;
+    height: 7px;
+    font-size: 16px;
+    fill: #fff;
+    align-items: center;
+    justify-content: center;
+
+    // Медиа-запрос для экранов с шириной до 1200px
+    @media (max-width: 1200px) {
+        display: flex;
+    }
+}
+
+.circle1, .circle2, .circle3 {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.circle3 {
+    margin-right: 0;
+}
+
+.dropbtn__icon path {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    top: 39px;
+    right: -73px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.dropdown-content__item {
+    border-bottom: 1px solid #EDEDED;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
 .header__vertical-line {
+    margin: 0 30px;
     height: 39px;
     width: 1px;
     background-color: #fff;
+
+    // Медиа-запрос для экранов с шириной до 1580px
+    @media (max-width: 1580px) {
+        margin: 0 25px;   
+    }
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        margin: 0 20px;
+    }
 }
 
 .header__booking {
     width: 235px;
     padding: 12px 0;
+    margin-right: 10px;
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 14px;
@@ -68,6 +178,17 @@
     outline: none;
     transition: all 0.2s ease-in;
     cursor: pointer;
+
+    // Медиа-запрос для экранов с шириной до 1580px
+    @media (max-width: 1580px) {
+        width: 226px;   
+    }
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        width: 163px;
+        padding: 6px 0;
+    }
 
     &:hover {
         background-color: #006CB5;
@@ -84,16 +205,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 180px;
-    height: 62px;
-    transition: all 0.2s ease-in;
+    width: 150px;
+    height: 49px;
+    // background: linear-gradient(90.09deg, #006CB5 0.55%, #0081D8 100%);
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in;
     cursor: pointer;
 
     &:hover {
-        background-color: #fff;
+        background-color: #FFFFFF;
         border-radius: 5px;
-        width: 180px;
-        height: 62px;
+        width: 150px;
+        height: 49px;
     }
 
     p {
@@ -102,7 +225,7 @@
         font-family: 'Open Sans';
         font-size: 14px;
         font-weight: 600;
-        line-height: 60px;
+        line-height: 30px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -111,7 +234,7 @@
         // Медиа-запрос для экранов с шириной до 1580px
         @media (max-width: 1580px) {
             margin-right: 10px;
-         }
+        }
     }
 }
 
@@ -126,8 +249,8 @@
     position: relative;
     z-index: 9;
     border-radius: 8px;
-    width: 61px;
-    height: 61px;
+    width: 45px;
+    height: 45px;
 }
 
 .menu-icon-line {
@@ -136,7 +259,7 @@
     height: 4px;
     border-radius: 100px;
     background-color: #fff;
-    transition: background-color 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
   
 .menu-icon-line::before {
@@ -152,7 +275,7 @@
     transition: all 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.header__menu:hover .menu-icon-line::before { // перекраживаем первую полоску при наведении на header__menu
+.header__menu:hover .menu-icon-line::before { // перекрашиваем первую полоску при наведении на header__menu
     background-color: #006CB5;
 }
 
@@ -169,6 +292,6 @@
     transition:  all 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.header__menu:hover .menu-icon-line::after { // перекраживаем третью полоску при наведении на header__menu
+.header__menu:hover .menu-icon-line::after { // перекрашиваем третью полоску при наведении на header__menu
     background-color: #006CB5;
 }

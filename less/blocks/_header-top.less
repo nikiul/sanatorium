@@ -1,5 +1,6 @@
 .header {
     background-color: #fff;
+    width: 100%
 }
 
 .header__top {
@@ -24,7 +25,21 @@
             width: 64px;
             height: 53px;
             margin-right: 10px;
-         }
+        }
+
+        // Медиа-запрос для экранов с шириной до 960px
+        @media (max-width: 960px) {
+            width: 98px;
+            height: 81px;
+            margin-right: 20px;
+        }
+
+        // Медиа-запрос для экранов с шириной до 540px
+        @media (max-width: 540px) {
+            width: 48px;
+            height: 40px;
+            margin-right: 20px;
+        }
     }
 
     img {  
@@ -33,6 +48,20 @@
            width: 64px;
            height: 53px;
            margin-right: 10px;
+        }
+
+        // Медиа-запрос для экранов с шириной до 960px
+        @media (max-width: 960px) {
+            width: 98px;
+            height: 81px;
+            margin-right: 20px;
+        }
+
+        // Медиа-запрос для экранов с шириной до 540px
+        @media (max-width: 540px) {
+            width: 48px;
+            height: 40px;
+            margin-right: 10px;
         }
     }
 }
@@ -45,9 +74,51 @@
     line-height: 22px;
     color: #303030;
 
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        width: 164px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        width: auto;
+        font-size: 14px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        width: auto;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        width: auto;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
     span {
         font-weight: 600;
         color: #006CB5;
+
+        // Медиа-запрос для экранов с шириной до 960px
+        @media (max-width: 960px) {
+            font-size: 18px;
+        }
+
+        // Медиа-запрос для экранов с шириной до 540px
+        @media (max-width: 540px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        // Медиа-запрос для экранов с шириной до 540px
+        @media (max-width: 540px) {
+            font-size: 10px;
+            line-height: 14px;
+        }
     }
 }
 
@@ -67,8 +138,53 @@
         font-size: 14px;
     }
 
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        display: none;
+    }
+
     span {
         font-weight: 800;
+    }
+}
+
+.header__book-ticket--wrapper {
+    margin-right: 15px;
+}
+
+.header__book-ticket {
+    display: none;
+    padding: 13px 0;
+    width: 235px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    display: none;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #2E95DB;
+    box-shadow: 0px 4px 20px rgba(0, 61, 102, 0.15);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    &:hover {
+        background-color: #006CB5;
+    }
+
+    &:active {
+        background-color: #003A62;
+    }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        display: flex;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        display: none;
     }
 }
 
@@ -78,6 +194,11 @@
     width: 120px;
     display: flex;
     justify-content: space-between; 
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        display: none;
+    }
 }
 
 .header__socials--item {
@@ -86,10 +207,22 @@
 
 .header__contacts {
     display: flex;
+    justify-content: space-between;
+    width: 548px;
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        width: 510px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        display: none;
+    }
 }
 
 .header__adress {
-    margin-right: 53px;
+
 }
 
 .adress {
@@ -116,6 +249,11 @@
 
     span {
         font-weight: 800;
+
+        // Медиа-запрос для экранов с шириной до 1580px
+        @media (max-width: 1580px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -129,8 +267,9 @@
 }
 
 .header__tel--info {
+    display: flex;
     flex-direction: column;
-
+    
     a {
         font-family: 'Open Sans';
         font-size: 12px;
@@ -139,75 +278,228 @@
         text-decoration-line: underline;
         text-transform: uppercase;
         color: #006CB5;
-    }
-}
 
-.drop-down-click {
-    margin: 0;
-    font-family: 'Open Sans';
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 18px;
-    color: #232A34;
-    outline: none;
-    cursor: pointer;
-
-    // Медиа-запрос для экранов с шириной до 1580px
-    @media (max-width: 1580px) {
-        font-size: 12px;
-     }
-}
-
-.drop-down-hide {
-    position: absolute;
-    top: 90px;
-    right: 165px;
-    z-index: 10;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    list-style-type: none;
-    display: none;
-
-    li {
-        margin: 0;
-        padding: 15px;
-        border-bottom: 1px solid #EDEDED;
-        font-family: 'Open Sans';
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 22px;
-        color: #303030;
-        cursor: pointer;
-        
-        span {
-            font-family: 'Open Sans';
+        // Медиа-запрос для экранов с шириной до 1580px
+        @media (max-width: 1580px) {
             font-size: 12px;
-            line-height: 16px;
-            color: #7D7D7D;
         }
     }
 }
 
-// .drop-down-click:focus ~ .drop-down-hide, 
-// .drop-down-click:active ~ .drop-down-hide, 
-// .drop-down-hide:hover 
-// { 
-//     display: block; 
-// } 
+.select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+}
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: #000;
+    width: 175px;
+    height: 25px;
 
-// .drop-menu {
-//     width: 180px;
+    // Медиа-запрос для экранов с шириной до 1580px
+    @media (max-width: 1580px) {
+        font-size: 14px;   
+    }
+}
+.select-styled {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.2s ease-in;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #303030;
 
-//     border: none;
-//     outline: none;
-// }
+    // Медиа-запрос для экранов с шириной до 1580px
+    @media (max-width: 1580px) {
+        font-size: 14px;   
+    }
 
-// .drop-menu__item {
-//     margin: 0;
-//     display: flex;
-//     flex-direction: column;
-// }
+    span {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+    }
 
+    &:after {
+        content:"";
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-color: #006CB5 transparent transparent transparent;
+        position: absolute;
+        top: 7px;
+        right: 14px;
+    }
+
+    &:hover {
+        background-color: #fff;
+    }
+
+    &:active, &.active {
+    background-color: #fff;
+        &:after {
+            top: 9px;
+            border-color: transparent transparent #006CB5 transparent;
+        }
+    }
+}
+  
+.select-options {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+
+    span {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    li {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #303030;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #EDEDED;
+    transition: all 0.15s ease-in;
+
+        &[rel="hide"] {
+            display: none;
+        }
+    }
+}
+
+// ------- бургер -------------
+.header__top-burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 21px;
+    width: 49px;
+    height: 49px;
+    background: linear-gradient(90.09deg, #006CB5 0.55%, #0081D8 100%);
+    border-radius: 5px;
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        display: flex;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.header__top-burger--wrapper {
+    width: 49px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.header__top-burger__menu-icon {
+    position: relative;
+    width: 28px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: background-color 0.2s ease-in 0.2s;
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        width: 23px;
+        height: 3.5px;
+    }
+}
+
+.header__top-burger__menu-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 34px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        width: 28px;
+        height: 3.5px;
+
+    }
+}
+
+.header__top-burger__menu-icon::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 18px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        width: 15px;
+        height: 3.5px;
+    }
+}
+
+.header__top-burger__menu-icon.header__top-burger__menu-icon--active {
+    background-color: transparent;
+}
+
+.header__top-burger__menu-icon.header__top-burger__menu-icon--active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.header__top-burger__menu-icon.header__top-burger__menu-icon--active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}

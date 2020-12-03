@@ -26,6 +26,16 @@
                     
                     <div class="header__programm">Программа ростуризма - <span>20%</span></div>
 
+                    <a href="#" class="header__book-ticket--wrapper">
+                        <button class="header__book-ticket">Забронировать путёвку</button>
+                    </a>
+
+                    <div class="header__top-burger">
+                        <button class="header__top-burger--wrapper">     
+                            <div class="header__top-burger__menu-icon"></div>
+                        </button>
+                    </div>
+
                     <ul class="header__socials socials">
                         <li class="header__socials--item">
                             <a href="#">
@@ -53,26 +63,15 @@
                         <div class="header__tel">
                             <img class="tel__icon" src="img/icons/tel.svg" alt="Телефон">
                             <div class="header__tel--info">
-                                <p class="drop-down-click" tabindex="1">8 (87937) 6-72-20 <img src="img/icons/drop-down-trigon.svg" alt=""></p>
 
-                                <!-- <select class="drop-menu" name="" id="">
-                                    <option enabled>8 (87937) 6-72-20</option>
-                                    <option class="drop-menu__item" value="+7 (495 ) 120-28-11">
-                                        <p>+7 (495 ) 120-28-11</p> <br>
-                                        <p>Кисловодск</p>
-                                    </option>
-                                    <option class="drop-menu__item" value="8 800 8000 800">
-                                        <p>8 800 8000 800</p> <br>
-                                        <p>Горячая линия</p>
-                                    </option>
-                                </select> -->
-
-                                <!-- <ul class="drop-down-hide">
-                                    <li>+7 (495 ) 120-28-11 <br> <span>Кисловодск</span></li>
-                                    <li>8 800 8000 800 <br> <span>Горячая линия</span></li>
-                                </ul> -->
-
+                                <select id="mounth">
+                                    <option value="">8 (87937) 6-72-20</option>
+                                    <option value="">+7 (495 ) 120-28-11 </option>
+                                    <option value="">8 800 8000 800 </option>
+                                </select>
+                                
                                 <a href="tel:8 (87937) 6-72-20">заказать звонок</a>
+ 
                             </div>
                         </div>
                     </div>
@@ -88,7 +87,8 @@
 
                 <div class="header__sub">
 
-                    <ul class="header__nav">
+                    <nav class="header__nav-wrapper1">  
+                        <ul class="header__nav">
                         <li class="header__nav--item">
                             <a href="index.html">Главная</a>
                         </li>
@@ -110,21 +110,39 @@
                         <li class="header__nav--item">
                             <a href="#">Контакты</a>
                         </li>
-                    </ul>
+                        </ul>
+                    </nav> 
 
                     <div class="header__vertical-line"></div>
 
-                    <ul class="header__nav">
-                        <li class="header__nav--item">
-                            <a href="#">Новости</a>
-                        </li>
-                        <li class="header__nav--item">
-                            <a href="#">Отзывы</a>
-                        </li>
-                        <li class="header__nav--item">
-                            <a href="#">Вопрос-ответ</a>
-                        </li>
-                    </ul>
+                    <nav class="header__nav-wrapper2">
+                        <ul class="header__nav">
+                            <li class="header__nav--item">
+                                <a href="#">Новости</a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#">Вопрос-ответ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>
+                        </div>
+                        <div class="dropdown-content">
+                        <div class="dropdown-content__item">
+                          <a  href="#">Новости</a>
+                        </div>  
+                          <a class="dropdown-content__item" href="#">Отзывы</a>
+                          <a class="dropdown-content__item" href="#">Вопрос-ответ</a>
+                        </div>
+                    </div>
 
                     <div class="header__vertical-line"></div>
 
