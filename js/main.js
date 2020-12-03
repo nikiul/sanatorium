@@ -4,16 +4,20 @@ document.getElementById('header__menu').addEventListener("mouseover", function()
 });
 
 
-// burger menu  sidebar
+// burger menu
 const sidebarToggleBtn = document.querySelector('.header__top-burger--wrapper');
 const menuIcon = document.querySelector('.header__top-burger__menu-icon')
-const sidebar = document.querySelector('.header__top')
+const sidebar = document.querySelector('.header__side-menu')
 
 // Клик по кнопке для скрытия / показа фильтра и изменения  иконки
-// sidebarToggleBtn.onclick = function(){
-//     menuIcon.classList.toggle('header__top-burger__menu-icon--active');
-//     sidebar.classList.toggle('sidebar--mobile-active');
-// };
+sidebarToggleBtn.onclick = function(){
+    menuIcon.classList.toggle('header__top-burger__menu-icon--active');
+    sidebar.classList.toggle('header__side-menu--active');
+};
+
+$('.header__top-burger').click(function() {
+    $('.shadow').toggleClass('body-shadow');
+})
 
 
 // Видео
