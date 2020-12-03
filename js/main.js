@@ -4,7 +4,7 @@ document.getElementById('header__menu').addEventListener("mouseover", function()
 });
 
 
-// burger menu
+// бургер
 const sidebarToggleBtn = document.querySelector('.header__top-burger--wrapper');
 const menuIcon = document.querySelector('.header__top-burger__menu-icon')
 const sidebar = document.querySelector('.header__side-menu')
@@ -15,6 +15,7 @@ sidebarToggleBtn.onclick = function(){
     sidebar.classList.toggle('header__side-menu--active');
 };
 
+// Тень при активном боковом меню
 $('.header__top-burger').click(function() {
     $('.shadow').toggleClass('body-shadow');
 })
