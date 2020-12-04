@@ -24,6 +24,9 @@ a {
   max-width: 1273px;
   margin: 0 auto;
 }
+.none {
+  display: none;
+}
 .header {
   background-color: #fff;
   width: 100%;
@@ -314,7 +317,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.header__tel--info a {
+.header__tel--info p {
+  margin: 0;
   font-family: 'Open Sans';
   font-size: 12px;
   font-weight: normal;
@@ -325,7 +329,7 @@ a {
   color: #006CB5;
 }
 @media (max-width: 1580px) {
-  .header__tel--info a {
+  .header__tel--info p {
     font-size: 12px;
   }
 }
@@ -585,18 +589,16 @@ a {
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
 }
 .header__side-menu {
-  display: none;
-  position: absolute;
-  overflow-y: scroll;
-  overscroll-behavior: contain;
-  -webkit-transform: translateX(150%);
-          transform: translateX(150%);
+  z-index: 9;
+  position: fixed;
+  margin-right: 0 !important;
   top: 0;
   bottom: 0;
   right: 0;
-  width: 312px;
-  z-index: 9;
   background: linear-gradient(90.09deg, #006cb5 0.55%, #0081d8 100%);
+  overflow-y: scroll;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
