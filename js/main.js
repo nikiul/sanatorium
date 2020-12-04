@@ -31,6 +31,9 @@ sidebarToggleBtn.onclick = function(){
 };
 
 // добавляем Тень при активном боковом меню
+// $('.header__top-burger').click(function() {
+//     $('.shadow').toggleClass('body-shadow');
+// })
 $('.header__top-burger').click(function() {
     $('.shadow').toggleClass('body-shadow');
 })
