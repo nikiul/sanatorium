@@ -589,6 +589,7 @@ a {
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
 }
 .header__side-menu {
+  width: 312px;
   z-index: 9;
   position: fixed;
   margin-right: 0 !important;
