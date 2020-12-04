@@ -19,7 +19,6 @@ desctopBtn2.onclick = function(){
     desctopMenu.classList.toggle('header__side-menu--active');
 };
 
-
 // бургер в сайдбаре
 const sidebarToggleBtn = document.querySelector('.header__top-burger--wrapper');
 const menuIcon = document.querySelector('.header__top-burger__menu-icon')
@@ -36,13 +35,12 @@ $('.header__top-burger').click(function() {
     $('.shadow').toggleClass('body-shadow');
 })
 
-// лочим прокрутку сайта при активном десктопном меню
-$('.header__menu').click(function() {
-    $('body').addClass('body__lock');
+// лочим прокрутку сайта при активном десктопном/мобильном меню
+$('.header__menu, .header__top-burger').click(function() {
+    $('body').toggleClass('body__lock');
 })
-
-// раззлочиваем прокрутку сайта при убраном активном меню
-$('.header__desctop-burger--wrapper').click(function() {
+// разлочиваем прокрутку сайта при убраном десктопном/мобильном меню
+$('.header__desctop-burger--wrapper, header__top-burger').click(function() {
     $('body').removeClass('body__lock');
 })
 
