@@ -705,6 +705,15 @@ a {
 .header-side__contacts-tel img {
   margin-right: 10px;
 }
+.header-side__contacts-tel--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .header-side__contacts-tel--info p {
   width: 169px;
   margin: 0;
