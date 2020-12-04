@@ -115,7 +115,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 .desctop-menu__column {
   width: 237px;
@@ -138,17 +138,20 @@ a {
   padding: 0;
   list-style-type: none;
 }
-.desctop-menu__list-link:last-child {
+.desctop-menu__list-item {
+  margin-bottom: 15px;
+}
+.desctop-menu__list-item:last-child {
   margin-bottom: 0;
 }
-.desctop-menu__list-item {
+.desctop-menu__list-link {
   margin-bottom: 15px;
   font-family: 'Open Sans';
   font-size: 14px;
   line-height: 22px;
   color: #FFFFFF;
 }
-.desctop-menu__list-item:hover {
+.desctop-menu__list-link:hover {
   color: #FED576;
   text-decoration: underline;
   font-weight: 600;
@@ -356,11 +359,9 @@ a {
 .header__programm span {
   font-weight: 800;
 }
-.header__book-ticket--wrapper {
-  margin-right: 15px;
-}
 .header__book-ticket {
   padding: 13px 0;
+  margin-right: 15px;
   width: 235px;
   font-family: 'Open Sans';
   font-weight: bold;
@@ -795,9 +796,15 @@ a {
   margin: 0;
   margin-bottom: 15px;
 }
-.ide-nav__item {
+.side-nav__item {
   margin-bottom: 10px;
   list-style-type: none;
+}
+.side-nav__item:last-child {
+  margin-bottom: 0;
+}
+.side-nav__link {
+  margin-bottom: 10px;
   font-family: 'Open Sans';
   font-weight: bold;
   font-size: 18px;
@@ -811,6 +818,7 @@ a {
 }
 .header-side__bookingbtn {
   padding: 15px 25px;
+  margin-top: 25px;
   margin-bottom: 25px;
   font-family: 'Open Sans';
   font-weight: bold;
@@ -1256,17 +1264,23 @@ a {
   background-size: cover;
   background-position: center;
 }
-.banner__bage {
+.banner__badge {
   display: inline-block;
   padding: 15px 25px;
   margin-top: 0px;
   margin-bottom: 14px;
   font-family: 'Open Sans';
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   border-radius: 5px;
   color: #FFFFFF;
   background-color: #FF3333;
+}
+@media (max-width: 960px) {
+  .banner__badge {
+    font-size: 16px;
+  }
 }
 .banner__title {
   width: 700px;
@@ -1278,6 +1292,11 @@ a {
   line-height: 72px;
   color: #FFFFFF;
 }
+@media (max-width: 960px) {
+  .banner__title {
+    font-size: 28px;
+  }
+}
 .banner__desc {
   width: 921px;
   margin: 0;
@@ -1286,6 +1305,11 @@ a {
   font-size: 20px;
   line-height: 27px;
   color: #FFFFFF;
+}
+@media (max-width: 960px) {
+  .banner__desc {
+    width: 684px;
+  }
 }
 .banner__about-progs {
   width: 338px;
@@ -1307,6 +1331,12 @@ a {
   transition: background-color 0.2s ease-in;
   cursor: pointer;
 }
+@media (max-width: 960px) {
+  .banner__about-progs {
+    font-size: 18px;
+    padding: 20px 0;
+  }
+}
 .banner__about-progs:hover {
   background-color: #006CB5;
 }
@@ -1322,12 +1352,33 @@ a {
           justify-content: space-between;
   margin-bottom: 26px;
 }
+@media (max-width: 1366px) {
+  .banner__block-link-wrapper {
+    margin-right: 15px;
+  }
+  .banner__block-link-wrapper:last-child {
+    margin-right: 0;
+  }
+}
 .banner__block {
   max-width: 296px;
   padding: 10px;
   margin-right: 30px;
   background-color: #fff;
   border-radius: 10px;
+}
+@media (max-width: 1366px) {
+  .banner__block {
+    max-width: 255px;
+    max-height: 180px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 960px) {
+  .banner__block {
+    max-width: 215px;
+    min-height: 245px;
+  }
 }
 .banner__block:last-child {
   margin-right: 0;
@@ -1354,6 +1405,11 @@ a {
   line-height: 26px;
   color: #232A34;
 }
+@media (max-width: 960px) {
+  .banner__block-title {
+    font-size: 16px;
+  }
+}
 .banner__block:hover .banner__block-title {
   color: #fff;
 }
@@ -1366,6 +1422,16 @@ a {
   font-size: 14px;
   line-height: 22px;
   color: #232A34;
+}
+@media (max-width: 1366px) {
+  .banner__block-par {
+    font-size: 12px;
+  }
+}
+@media (max-width: 960px) {
+  .banner__block-par {
+    font-size: 14px;
+  }
 }
 .banner__block:hover .banner__block-par {
   color: #fff;

@@ -157,13 +157,10 @@
     }
 }
 
-.header__book-ticket--wrapper {
-    margin-right: 15px;
-}
-
 .header__book-ticket {
     display: none;
     padding: 13px 0;
+    margin-right: 15px;
     width: 235px;
     font-family: 'Open Sans';
     font-weight: bold;
@@ -571,9 +568,17 @@
     margin-bottom: 15px;  
 }
 
-.ide-nav__item {
+.side-nav__item {
     margin-bottom: 10px;
     list-style-type: none;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.side-nav__link {
+    margin-bottom: 10px;
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 18px;
@@ -587,12 +592,9 @@
     border-bottom: 1px solid #2E95DB;
 }
 
-.header-side__bookingbtn-link {
-
-}
-
 .header-side__bookingbtn {
     padding: 15px 25px;
+    margin-top: 25px;
     margin-bottom: 25px;
     font-family: 'Open Sans';
     font-weight: bold;
