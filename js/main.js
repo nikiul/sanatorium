@@ -3,8 +3,24 @@ var bg = document.getElementById('menu-icon-line');
 document.getElementById('header__menu').addEventListener("mouseover", function(){bg.style.background = "#006CB5";this.addEventListener("mouseout", function(){bg.style.background = "";});
 });
 
+// бургер в десктопном меню
+const desctopBtn = document.querySelector('.header__menu');
+const desctopBtn2 = document.querySelector('.header__desctop-burger--wrapper');
+const desctopmenuIcon = document.querySelector('.header__desctop-burger__menu-icon')
+const desctopMenu = document.querySelector('.header__desctop-menu')
 
-// бургер
+// Клик по кнопке для скрытия / показа фильтра и изменения  иконки
+desctopBtn.onclick = function(){
+    desctopmenuIcon.classList.toggle('header__desctop-menu--active');
+    desctopMenu.classList.toggle('header__side-menu--active');
+};
+desctopBtn2.onclick = function(){
+    desctopmenuIcon.classList.toggle('header__desctop-menu--active');
+    desctopMenu.classList.toggle('header__side-menu--active');
+};
+
+
+// бургер в сайдбаре
 const sidebarToggleBtn = document.querySelector('.header__top-burger--wrapper');
 const menuIcon = document.querySelector('.header__top-burger__menu-icon')
 const sidebar = document.querySelector('.header__side-menu')
@@ -15,9 +31,19 @@ sidebarToggleBtn.onclick = function(){
     sidebar.classList.toggle('header__side-menu--active');
 };
 
-// Тень при активном боковом меню
+// добавляем Тень при активном боковом меню
 $('.header__top-burger').click(function() {
     $('.shadow').toggleClass('body-shadow');
+})
+
+// лочим прокрутку сайта при активном десктопном меню
+$('.header__menu').click(function() {
+    $('body').addClass('body__lock');
+})
+
+// раззлочиваем прокрутку сайта при убраном активном меню
+$('.header__desctop-burger--wrapper').click(function() {
+    $('body').removeClass('body__lock');
 })
 
 

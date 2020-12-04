@@ -3,14 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Главная</title>
 </head>
 <body>
     <!-- header -->
     <header class="header">
+
+        <!-- десктопное меню -->
+        <div class="header__desctop-menu">
+
+            <!-- бургер декстопного меню -->
+            <div class="header__desctop-burger">
+                <button class="header__desctop-burger--wrapper">     
+                    <div class="header__desctop-burger__menu-icon"></div>
+                </button>
+            </div>
+            <!-- // бургер декстопного меню -->
+
+            <div class="container">
+
+                <div class="desctop-menu__row">
+
+                    <div class="desctop-menu__column">
+                        <p>Санаторий</p>
+                        <ul class="desctop-menu__list">
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">О санатории</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Мы открылись</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Медиагалерея</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Виртуальный тур</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Сотрудничество</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Расположение</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Отзывы</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="desctop-menu__column">
+                        <p>Лечение</p>
+                        <ul class="desctop-menu__list">
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Программы лечения</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Программы питания</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Лечебная база</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Врачебный коллектив</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Природные факторы</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="desctop-menu__column">
+                        <p>Проживание</p>
+                        <ul class="desctop-menu__list">
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Корпус 4</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Корпус 2</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Корпус 3</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="desctop-menu__column">
+                        <p>Путевки</p>
+                        <ul class="desctop-menu__list">
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Путевка с лечением, <br> в т.ч. реабилитация</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Антистресс</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Повышай иммунитет</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Движение - Жизнь</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Оздоровительная</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Репродуктивное здоровье</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="desctop-menu__column">
+                        <p>Инфо</p>
+                        <ul class="desctop-menu__list">
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Вопрос-ответ</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Чем заняться в санатории ? </li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Бронирование МИР и кэшбэк</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Правила пребывания</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Памятка отдыхающего</li>
+                            </a>
+                            <a class="descop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Информация о гигиене и защитных мерах</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Курортный сбор</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">Регламентирующие документы</li>
+                            </a>
+                            <a class="desctop-menu__list-link" href="#">
+                                <li class="desctop-menu__list-item">СОУТ</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="desctop-menu__desclamer">
+                    <h3>ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</h3>
+                </div>
+
+                <div class="desctop-menu__contacts">
+                    <p class="desctop-menu__contacts-title">Контакты:</p>
+
+                    <div class="desctop-menu__row">
+
+                        <div class="desctop-menu__contacts-column">
+                            <p class="desctop-menu__contacts-toptext">Адрес:</p>
+                            <p class="desctop-menu__contacts-subtext">Ставропольский край, г. Кисловодск, проспект Ленина, 30</p>
+                        </div>
+                        <div class="desctop-menu__vertical-line"></div>
+                        <div class="desctop-menu__contacts-column">
+                            <p class="desctop-menu__contacts-toptext">Телефон:</p>
+                            <a href="tel:88793767220" class="desctop-menu__contacts-subtext">8 (87937) 6-72-20</a>
+                        </div>
+                        <div class="desctop-menu__vertical-line"></div>
+                        <div class="desctop-menu__contacts-column">
+                            <p class="desctop-menu__contacts-toptext">Эл. почта:</p>
+                            <a href="Allentown@gmail.com" class="desctop-menu__contacts-subtext">Parker Rd. Allentown@gmail.com</a>
+                        </div>
+                        <div class="desctop-menu__vertical-line"></div>
+                        <div class="desctop-menu__contacts-column">
+                            <p class="desctop-menu__contacts-toptext">Режим работы:</p>
+                            <p class="desctop-menu__contacts-subtext">09:00 - 20:00</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- // десктопное меню -->
 
         <div class="header__top--wrapper">
 
@@ -24,7 +200,9 @@
                         <h3 class="header__title">Официальный сайт <br> <span>СКУ «Санаторий им. Георгия Димитрова»</span></h3>
                     </div>
                     
-                    <div class="header__programm">Программа ростуризма - <span>20%</span></div>
+                    <a href="#">
+                        <button class="header__programm">Программа ростуризма - <span>20%</span></button>
+                    </a>
 
                     <a href="#" class="header__book-ticket--wrapper">
                         <button class="header__book-ticket">Забронировать путёвку</button>
@@ -71,7 +249,7 @@
                                     </select>
                                     <!-- <img src="img/icons/drop-down-trigon.svg" alt=""> -->
                                 </div>
-                                <p >заказать звонок</p>
+                                <p >Заказать звонок</p>
  
                             </div>
                         </div>
@@ -272,7 +450,7 @@
     </header>
     <!-- // header -->
 
-    <main class="main none">
+    <main class="main">
 
         <!-- section__banner -->
         <section class="section__banner">

@@ -1,0 +1,202 @@
+.header__desctop-menu {
+    transform: translateY(-150%);
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    transition: transform 0.3s ease-in;
+    overflow-y: scroll;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: linear-gradient(90.09deg, #006CB5 0.55%, #0081D8 100%);
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        display: none;
+    }
+}
+
+.header__desctop-menu--active {
+    transform: translateY(100%);
+}
+
+// ------- бургер в десктопном меню ---------
+.header__desctop-burger {
+    margin-top: -30px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__desctop-burger--wrapper {
+    width: 49px;
+    height: 49px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__desctop-burger__menu-icon {
+    transform: rotate(45deg);
+    top: 0;
+    position: relative;
+    width: 34px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: background-color 0.2s ease-in 0.2s;
+    cursor: pointer;
+}
+
+// .header__desctop-burger__menu-icon::before {
+//     position: absolute;
+//     left: 0;
+//     top: -10px;
+//     content: '';
+//     width: 34px;
+//     height: 4px;
+//     border-radius: 100px;
+//     // background-color: #fff;
+//     background-color: transparent;
+
+//     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+// }
+
+.header__desctop-burger__menu-icon::after {
+    transform: rotate(-90deg);
+    top: 0;
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 34px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+// .header__desctop-burger__menu-icon.header__desctop-burger__menu-icon--active {
+//     transform: rotate(45deg);
+//     top: 0;
+//     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+// }
+
+// .header__desctop-burger__menu-icon.header__desctop-burger__menu-icon--active::before {
+//     background-color: #fff;
+// }
+
+// .header__desctop-burger__menu-icon.header__desctop-burger__menu-icon--active::after {
+//     transform: rotate(90deg);
+//     top: 0;
+//     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+// }
+
+.header__desctop-burger__menu-icon--active {
+
+}
+
+.desctop-menu__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.desctop-menu__column {
+    width: 237px;
+
+    p {
+        margin: 0;
+        margin-bottom: 15px;
+        font-family: 'Open Sans';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px;
+        align-items: center;
+        color: #FFFFFF;
+    }
+}
+
+.desctop-menu__list {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.desctop-menu__list-link {
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.desctop-menu__list-item {
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    &:hover {
+        color: #FED576;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
+
+.desctop-menu__desclamer {
+
+    h3 {
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 40px 0;
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.desctop-menu__contacts-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.desctop-menu__vertical-line {
+    background-color: #fff;
+    width: 1px;
+    height: 50px;
+}
+
+.desctop-menu__contacts-toptext{
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.desctop-menu__contacts-subtext {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
