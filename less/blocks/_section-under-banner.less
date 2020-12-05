@@ -10,4 +10,40 @@
     font-size: 20px;
     line-height: 27px;
     color: #FFFFFF;
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        font-size: 18px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.under-banner__mobile-link {
+    display: none;
+    align-items: center;
+    border-bottom:1px solid #fff;
+    p {
+        margin: 0;
+        margin-right: 15px;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        display: inline-flex;
+    }
+}
+
+.under-banner__mobile-img {
+    
+
 }

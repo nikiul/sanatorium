@@ -5,6 +5,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 320px
+    @media (max-width: 320px) {
+        padding-bottom: 30px;
+    }
 }
 
 .banner__badge {
@@ -24,10 +41,17 @@
     @media (max-width: 960px) {
         font-size: 16px;
     }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        padding: 8px 12px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
 }
 
 .banner__title {
-    width: 700px;
+    max-width: 700px;
     margin: 0;
     margin-bottom: 10px;
     font-family: 'Open Sans';
@@ -38,12 +62,31 @@
 
     // Медиа-запрос для экранов с шириной до 960px
     @media (max-width: 960px) {
-        font-size: 28px;
+        margin-bottom: 20px;
+        max-width: 523px;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        margin-bottom: 25px;
+        max-width: 505px;
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        margin-bottom: 20px;
+        max-width: 209px;
+        font-size: 36px;
+        line-height: 46px;
     }
 }
 
 .banner__desc {
-    width: 921px;
+    max-width: 921px;
     margin: 0;
     margin-bottom: 30px;
     font-family: 'Open Sans';
@@ -51,9 +94,21 @@
     line-height: 27px;
     color: #FFFFFF;
 
+    span {
+        margin-top: 10px;
+    }
+
     // Медиа-запрос для экранов с шириной до 960px
     @media (max-width: 960px) {
-        width: 684px;
+        max-width: 684px;
+        margin-bottom: 25px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 15px;
     }
 }
 
@@ -75,10 +130,27 @@
     transition: background-color 0.2s ease-in;
     cursor: pointer;
 
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        margin-bottom: 40px;
+    }
+
     // Медиа-запрос для экранов с шириной до 960px
     @media (max-width: 960px) {
+        margin-bottom: 30px;
         font-size: 18px;
         padding: 20px 0;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        margin-bottom: 30px;
     }
     
     &:hover {
@@ -97,6 +169,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 26px;
+
+    // Медиа-запрос для экранов с шириной до 810px
+    @media (max-width: 810px) {
+        display: none;
+    }
 }
 
 .banner__block-link-wrapper {
@@ -130,6 +207,12 @@
     @media (max-width: 960px) {
         max-width: 215px;
         min-height: 245px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 810px
+    @media (max-width: 810px) {
+        max-width: 310px;
+        min-height: 149px;
     }
 
     &:last-child {
@@ -166,6 +249,7 @@
     @media (max-width: 960px) {
         font-size: 16px;
     }
+
 }
 
 .banner__block:hover .banner__block-title { // меняем цвет текста при наведении на block
@@ -191,6 +275,11 @@
     @media (max-width: 960px) {
         font-size: 14px;
     }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 810px) {
+        width: 270px;
+    }
 }
 
 .banner__block:hover .banner__block-par { // меняем цвет текста при наведении на block
@@ -199,9 +288,29 @@
 
 // ---------------- // карточки ----------------
 
+// ---------------- карусель -------------------
+
+#owl-carousel__banner {
+    margin-bottom: 40px;
+    display: none;
+
+    // Медиа-запрос для экранов с шириной до 810px
+    @media (max-width: 810px) {
+        display: block;
+    }
+}
+
+// ---------------- // карусель -------------------
+
+
 .banner__img--down {
     display: block;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        display: none;
+    }
 }

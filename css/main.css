@@ -30,7 +30,7 @@ a {
   padding-right: 20px;
 }
 .container {
-  max-width: 1243px;
+  max-width: 1253px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -1266,6 +1266,23 @@ a {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 960px) {
+  .section__banner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 540px) {
+  .section__banner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .section__banner {
+    padding-bottom: 30px;
+  }
+}
 .banner__badge {
   display: inline-block;
   padding: 15px 25px;
@@ -1284,8 +1301,15 @@ a {
     font-size: 16px;
   }
 }
+@media (max-width: 540px) {
+  .banner__badge {
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}
 .banner__title {
-  width: 700px;
+  max-width: 700px;
   margin: 0;
   margin-bottom: 10px;
   font-family: 'Open Sans';
@@ -1296,11 +1320,30 @@ a {
 }
 @media (max-width: 960px) {
   .banner__title {
-    font-size: 28px;
+    margin-bottom: 20px;
+    max-width: 523px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+@media (max-width: 540px) {
+  .banner__title {
+    margin-bottom: 25px;
+    max-width: 505px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 540px) {
+  .banner__title {
+    margin-bottom: 20px;
+    max-width: 209px;
+    font-size: 36px;
+    line-height: 46px;
   }
 }
 .banner__desc {
-  width: 921px;
+  max-width: 921px;
   margin: 0;
   margin-bottom: 30px;
   font-family: 'Open Sans';
@@ -1308,9 +1351,20 @@ a {
   line-height: 27px;
   color: #FFFFFF;
 }
+.banner__desc span {
+  margin-top: 10px;
+}
 @media (max-width: 960px) {
   .banner__desc {
-    width: 684px;
+    max-width: 684px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 540px) {
+  .banner__desc {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
   }
 }
 .banner__about-progs {
@@ -1333,10 +1387,27 @@ a {
   transition: background-color 0.2s ease-in;
   cursor: pointer;
 }
+@media (max-width: 1366px) {
+  .banner__about-progs {
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 960px) {
   .banner__about-progs {
+    margin-bottom: 30px;
     font-size: 18px;
     padding: 20px 0;
+  }
+}
+@media (max-width: 540px) {
+  .banner__about-progs {
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 540px) {
+  .banner__about-progs {
+    margin-bottom: 30px;
   }
 }
 .banner__about-progs:hover {
@@ -1353,6 +1424,11 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 26px;
+}
+@media (max-width: 810px) {
+  .banner__blocks-row {
+    display: none;
+  }
 }
 @media (max-width: 1366px) {
   .banner__block-link-wrapper {
@@ -1380,6 +1456,12 @@ a {
   .banner__block {
     max-width: 215px;
     min-height: 245px;
+  }
+}
+@media (max-width: 810px) {
+  .banner__block {
+    max-width: 310px;
+    min-height: 149px;
   }
 }
 .banner__block:last-child {
@@ -1435,14 +1517,33 @@ a {
     font-size: 14px;
   }
 }
+@media (max-width: 810px) {
+  .banner__block-par {
+    width: 270px;
+  }
+}
 .banner__block:hover .banner__block-par {
   color: #fff;
+}
+#owl-carousel__banner {
+  margin-bottom: 40px;
+  display: none;
+}
+@media (max-width: 810px) {
+  #owl-carousel__banner {
+    display: block;
+  }
 }
 .banner__img--down {
   display: block;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 960px) {
+  .banner__img--down {
+    display: none;
+  }
 }
 .section__under-banner {
   padding-top: 33px;
@@ -1456,10 +1557,68 @@ a {
   line-height: 27px;
   color: #FFFFFF;
 }
+@media (max-width: 1366px) {
+  .under-banner__par {
+    font-size: 18px;
+  }
+}
+@media (max-width: 540px) {
+  .under-banner__par {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.under-banner__mobile-link {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #fff;
+}
+.under-banner__mobile-link p {
+  margin: 0;
+  margin-right: 15px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+@media (max-width: 540px) {
+  .under-banner__mobile-link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
 .section__about-sanatorium {
   padding-top: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   background-color: #fff;
+}
+@media (max-width: 1366px) {
+  .section__about-sanatorium {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 960px) {
+  .section__about-sanatorium {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 540px) {
+  .section__about-sanatorium {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .section__about-sanatorium {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .about-sanatorium__row {
   display: -webkit-box;
@@ -1473,8 +1632,29 @@ a {
 .about-sanatorium__row:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 780px) {
+  .about-sanatorium__row-top {
+    display: none;
+  }
+}
+.about-sanatorium__center-col {
+  display: none;
+}
+@media (max-width: 780px) {
+  .about-sanatorium__center-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
 .about-sanatorium__left-col {
   max-width: 377px;
+  margin-right: 20px;
 }
 .about-sanatorium__title {
   margin: 0;
@@ -1482,8 +1662,39 @@ a {
   font-family: 'Open Sans';
   font-weight: bold;
   font-size: 48px;
-  line-height: 58px;
+  line-height: 30px;
   color: #303030;
+}
+@media (max-width: 1366px) {
+  .about-sanatorium__title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 960px) {
+  .about-sanatorium__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 960px) {
+  .about-sanatorium__title {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 960px) {
+  .about-sanatorium__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 540px) {
+  .about-sanatorium__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .about-sanatorium__title {
+    font-size: 32px;
+  }
 }
 .about-sanatorium__par {
   margin: 0;
@@ -1493,6 +1704,24 @@ a {
   font-size: 18px;
   line-height: 30px;
   color: #303030;
+}
+@media (max-width: 960px) {
+  .about-sanatorium__par {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 540px) {
+  .about-sanatorium__par {
+    margin-bottom: 25px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 320px) {
+  .about-sanatorium__par {
+    margin-bottom: 20px;
+  }
 }
 .about-sanatorium__btn {
   width: 235px;
@@ -1524,12 +1753,45 @@ a {
           box-shadow: 0px 4px 20px rgba(0, 61, 102, 0.15);
   border-radius: 5px;
 }
+@media (max-width: 540px) {
+  .about-sanatorium__btn {
+    width: 142px;
+  }
+}
 .about-sanatorium__right-col {
   position: relative;
-  max-height: 650px;
+  width: 877px;
+  height: 650px;
   background-image: url('../img/blue-square.jpg');
   background-repeat: no-repeat;
   background-position: right top;
+  background-size: 60% 60%;
+  border-radius: 10px;
+}
+@media (max-width: 1366px) {
+  .about-sanatorium__right-col {
+    width: 687px;
+    height: 555px;
+  }
+}
+@media (max-width: 1060px) {
+  .about-sanatorium__right-col {
+    width: 587px;
+    height: 485px;
+  }
+}
+@media (max-width: 960px) {
+  .about-sanatorium__right-col {
+    width: 453px;
+    height: 430px;
+  }
+}
+@media (max-width: 780px) {
+  .about-sanatorium__right-col {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
 .video_wrapper {
   width: 867px;
@@ -1539,6 +1801,13 @@ a {
   position: relative;
   background-color: #000;
   border-radius: 10px;
+}
+@media (max-width: 1366px) {
+  .video_wrapper {
+    width: 98.8%;
+    height: 100%;
+    margin-top: 6px;
+  }
 }
 .video_wrapper_full {
   padding-top: 315px;
@@ -1562,7 +1831,8 @@ a {
   width: 100%;
   height: 100%;
   background-image: url('../img/about-video.jpg');
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   border: none;
   outline: none;
   text-indent: -999em;

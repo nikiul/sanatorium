@@ -113,3 +113,14 @@ $('select').each(function(){
   });
 
 });
+
+
+// карусель в баннере
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 3,
+        loop: true,
+        nav: true,
+        navText: ['','']
+    });
+});

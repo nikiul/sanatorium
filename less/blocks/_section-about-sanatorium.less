@@ -1,21 +1,80 @@
 .section__about-sanatorium {
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     background-color: #fff;
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 320px
+    @media (max-width: 320px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
-.about-sanatorium__row{
+.about-sanatorium__row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        // align-items: center;
+    }
 
     &:last-child {
         margin-bottom: 0;
     }
 }
 
+.about-sanatorium__row-top {
+
+    // Медиа-запрос для экранов с шириной до 780px
+    @media (max-width: 780px) {
+        display: none;   
+    }
+}
+
+.about-sanatorium__row-bottom {
+
+}
+
+.about-sanatorium__center-col {
+    display: none;
+
+    // Медиа-запрос для экранов с шириной до 780px
+    @media (max-width: 780px) {
+        display: flex;
+        flex-direction: column;   
+        margin-bottom: 20px;
+    }
+}
+
 .about-sanatorium__left-col {
     max-width: 377px;
+    margin-right: 20px;
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        // max-width: 450px;
+        // max-width: 50%;
+    }
 }
 
 .about-sanatorium__title {
@@ -24,8 +83,39 @@
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 30px;
     color: #303030;
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        margin-bottom: 20px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        font-size: 36px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        margin-bottom: 25px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        font-size: 36px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 320px
+    @media (max-width: 320px) {
+        font-size: 32px;
+    }
 }
 
 .about-sanatorium__par {
@@ -36,6 +126,24 @@
     font-size: 18px;
     line-height: 30px;
     color: #303030;
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        margin-bottom: 25px;
+        line-height: 24px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 320px
+    @media (max-width: 320px) {
+        margin-bottom: 20px;
+    }
 }
 
 .about-sanatorium__btn {
@@ -65,26 +173,50 @@
         box-shadow: 0px 4px 20px rgba(0, 61, 102, 0.15);
         border-radius: 5px;
     }
+
+    // Медиа-запрос для экранов с шириной до 540px
+    @media (max-width: 540px) {
+        width: 142px;
+    }
 }
 
+// ---------- видео -----------
 .about-sanatorium__right-col {
     position: relative;
-    max-height: 650px;
+    width: 877px;
+    // height: auto;
+    height: 650px;
     background-image: url('../img/blue-square.jpg');
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: 60% 60%;
+    border-radius: 10px;
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        width: 687px;
+        height: 555px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 1060px
+    @media (max-width: 1060px) {
+        width: 587px;
+        height: 485px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 960px
+    @media (max-width: 960px) {
+        width: 453px;
+        height: 430px;
+    }
+
+    // Медиа-запрос для экранов с шириной до 780px
+    @media (max-width: 780px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 }
-
-// .about-sanatorium__video--wrapper {
-    
-// }
-
-// .about-sanatorium__video {
-//     margin-top: 10px;
-//     margin-right: 10px;
-//     border-radius: 10px;
-// }
-
 
 .video_wrapper {
     width: 867px;
@@ -94,15 +226,20 @@
     position: relative;
     background-color: #000;
     border-radius: 10px;
+
+    // Медиа-запрос для экранов с шириной до 1366px
+    @media (max-width: 1366px) {
+        width: 98.8%;
+        height: 100%;
+        margin-top: 6px;
+    }
 }
 
 .video_wrapper_full {
     padding-top: 315px;
 }
-  
-  
+   
 .videoIframe {
-    
     position: absolute;
     top: 0;
     bottom: 0;
@@ -116,14 +253,15 @@
   
 .videoPoster {
     border-radius: 10px;
-
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
     background-image:url('../img/about-video.jpg');
-    background-size: 100%;
+    // background-size: 100%;
+    background-size: cover;
+    background-position: center;
     border: none;
     outline: none;
     text-indent: -999em;
@@ -140,7 +278,6 @@
     cursor: pointer;
 }
 .videoPoster:before {
-    
     content: '';
     position: absolute;
     top: 50%;
@@ -185,7 +322,6 @@
 .about__block-link-wrapper {
     transition: all 0.2s ease-in;
     
-
     &:hover {
         transform: translateY(-40px)
     }
